@@ -11,7 +11,8 @@ sample <- sample(marbles,1)
 # - Randomly samples a marble
 # - Returns whether or not the person guessed accurately (preferrably a full phrase)
 MarbleGame <- function(guess) {
-    
+    marbles <- c("red","orange","yellow","green","blue","purple")
+    sample <- sample(marbles,1)
     if (guess == sample) {
         
         answer <- paste("You guessed", guess, ", which was the correct answer")
